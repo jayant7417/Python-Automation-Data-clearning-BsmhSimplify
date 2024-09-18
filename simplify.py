@@ -11,7 +11,7 @@ from process_onhold import process_onhold
 from process_status import process_status
 from process_vms_files import process_vms_files
 
-given_date = datetime(2024, 9, 15)
+given_date = datetime(2024, 10, 15)
 
 # Get today's date
 today_date = datetime.today()
@@ -42,7 +42,6 @@ while True:
             process_job_board_files(folder_path)
             process_status(folder_path)
             process_closing(folder_path)
-            process_status(folder_path)
             process_onhold(folder_path)
         elif b == 0:
             delete_files(folder_path)
